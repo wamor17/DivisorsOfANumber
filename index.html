@@ -1,15 +1,99 @@
 <DOCType>
-<html>
-<head>
-    <title> Multiplos de un número </title>
-    <script src="indexScript.js"></script>
-</head>
-<body>
-  <h1> Ingrese un número </h1>
-  <input type="text" id="txtInputNumber" onclick="calculateDivisors()">
-  <input type="submit" id="btnInputNumber" value="Calcular">
-  <br>
-  <h1> Divisores: </h1>
-  <input type="text" id="showDivisors">
-</body>
-</html>
+  <html>
+
+  <head>
+    <title> Divisors of a number </title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper teal darken-3">
+        <div class="row">
+          <div class="col m1"></div>
+          <div class="col m10">
+            <a href="#!" class="brand-logo"> What are the divisors of n? </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="index.html">Divisors of n</a>
+                </li>
+                <li>
+                  <a href="#">y=x</a>
+                </li>
+                <li>
+                  <a href="#">f(t)</a>
+                </li>
+                <li>
+                  <a href="#">ln(x)</a>
+                </li>
+            </ul>
+          </div>
+          <div class="col m1"></div>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="index.html">Divisors of n</a>
+      </li>
+      <li>
+        <a href="#">More fun numbers</a>
+      </li>
+      <li>
+        <a href="#">More fun numbers</a>
+      </li>
+      <li>
+        <a href="#">More fun numbers</a>
+      </li>
+    </ul>
+
+    <br>
+    <div class="container center-align">
+      <div class="row">
+        <div class="col m4"></div>
+        <div class="col m4">
+          <h5> Type a number </h5>
+          <br>
+          <input type="text" id="txtInputNumber" class="sizeFont center-align" onkeyup="calculateDivisors()" maxlength="5">
+          <br>
+          <input type="submit" value="Calculate" id="btnInputNumber" class="btn teal darken-3" onclick="calculateDivisors()">
+        </div>
+        <div class="col m4"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col m1"></div>
+      <div class="col m10 center-align">
+        <div class="divider"></div>
+        <br>
+        <h5> There are the dividers </h5>
+        <h6 id="numberDivisors"></h6>
+        <div id="textarea1" class="sizeFont"></div>
+      </div>
+      <div class="col m1"></div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/indexScript.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+      });
+    </script>
+  </body>
+
+  </html>
