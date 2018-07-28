@@ -1,4 +1,5 @@
 
+
 .sizeFont{
     width: 100%;
     padding: 20px;
@@ -6,3 +7,25 @@
     font-size: 40px !important;
     
 }
+
+@media screen and (max-width: 700px){
+    .brand-logo{
+        display: block !important;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .brand-logo{
+        display: block !important;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .brand-logo{
+        display: block !important;
+        font-size: 19px !important;
+    }
+}
+
