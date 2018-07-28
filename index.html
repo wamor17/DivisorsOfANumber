@@ -3,9 +3,9 @@
 
   <head>
     <title> Divisors of a number </title>
-
-    <!--Import Google Icon Font-->
+    <!--Import Google Icon Font
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    -->
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="css/indexStyle.css">
@@ -18,24 +18,16 @@
       <div class="nav-wrapper teal darken-3">
         <div class="row">
           <div class="col m1"></div>
-          <div class="col m10">
+          <div class="col s12 m10">
             <a href="#!" class="brand-logo"> What are the divisors of n? </a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li>
-                  <a href="index.html">Divisors of n</a>
-                </li>
-                <li>
-                  <a href="#">y=x</a>
-                </li>
-                <li>
-                  <a href="#">f(t)</a>
-                </li>
-                <li>
-                  <a href="#">ln(x)</a>
-                </li>
+                <li> <a href="index.html">Divisors of n</a> </li>
+                <li> <a href="#">y=x</a> </li>
+                <li> <a href="#">f(t)</a> </li>
+                <li> <a href="#">e<sup>(ix)</sup></a> </li>
             </ul>
           </div>
           <div class="col m1"></div>
@@ -44,38 +36,30 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li>
-        <a href="index.html">Divisors of n</a>
-      </li>
-      <li>
-        <a href="#">More fun numbers</a>
-      </li>
-      <li>
-        <a href="#">More fun numbers</a>
-      </li>
-      <li>
-        <a href="#">More fun numbers</a>
-      </li>
+      <li> <a href="index.html">Divisors of n</a> </li>
+      <li> <a href="#">y=x</a> </li>
+      <li> <a href="#">f(t)</a> </li>
+      <li> <a href="#">e<sup>(ix)</sup></a> </li>
     </ul>
 
     <br>
     <div class="container center-align">
       <div class="row">
-        <div class="col m4"></div>
-        <div class="col m4">
+        <div class="col s2 m4"></div>
+        <div class="col s8 m4">
           <h5> Type a number </h5>
           <br>
           <input type="text" id="txtInputNumber" class="sizeFont center-align" onkeyup="calculateDivisors()" maxlength="5">
           <br>
           <input type="submit" value="Calculate" id="btnInputNumber" class="btn teal darken-3" onclick="calculateDivisors()">
         </div>
-        <div class="col m4"></div>
+        <div class="col s2 m4"></div>
       </div>
     </div>
 
     <div class="row">
       <div class="col m1"></div>
-      <div class="col m10 center-align">
+      <div class="col s12 m10 center-align">
         <div class="divider"></div>
         <br>
         <h5> There are the dividers </h5>
